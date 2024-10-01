@@ -1,0 +1,827 @@
+/* ========================================
+   Font Imports and Font-Face Declarations
+   ======================================== */
+
+/* ----------------------------------------
+   CrimsonPro Fonts
+   ---------------------------------------- */
+
+@font-face {
+  font-family: "CrimsonPro-ExtraLight";
+  src: url("../fonts/CrimsonPro/CrimsonPro-ExtraLight.ttf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CrimsonPro-ExtraLightItalic";
+  src: url("../fonts/CrimsonPro/CrimsonPro-ExtraLightItalic.ttf")
+    format("opentype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "CrimsonPro-Light";
+  src: url("../fonts/CrimsonPro/CrimsonPro-Light.ttf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CrimsonPro-LightItalic";
+  src: url("../fonts/CrimsonPro/CrimsonPro-LightItalic.ttf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "CrimsonPro-Regular";
+  src: url("../fonts/CrimsonPro/CrimsonPro-Regular.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CrimsonPro-Italic";
+  src: url("../fonts/CrimsonPro/CrimsonPro-Italic.ttf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "CrimsonPro-Medium";
+  src: url("../fonts/CrimsonPro/CrimsonPro-Medium.ttf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CrimsonPro-MediumItalic";
+  src: url("../fonts/CrimsonPro/CrimsonPro-MediumItalic.ttf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "CrimsonPro-SemiBold";
+  src: url("../fonts/CrimsonPro/CrimsonPro-SemiBold.ttf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CrimsonPro-SemiBoldItalic";
+  src: url("../fonts/CrimsonPro/CrimsonPro-SemiBoldItalic.ttf")
+    format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "CrimsonPro-Bold";
+  src: url("../fonts/CrimsonPro/CrimsonPro-Bold.ttf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CrimsonPro-BoldItalic";
+  src: url("../fonts/CrimsonPro/CrimsonPro-BoldItalic.ttf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "CrimsonPro-ExtraBold";
+  src: url("../fonts/CrimsonPro/CrimsonPro-ExtraBold.ttf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CrimsonPro-ExtraBoldItalic";
+  src: url("../fonts/CrimsonPro/CrimsonPro-ExtraBoldItalic.ttf")
+    format("opentype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "CrimsonPro-Black";
+  src: url("../fonts/CrimsonPro/CrimsonPro-Black.ttf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CrimsonPro-BlackItalic";
+  src: url("../fonts/CrimsonPro/CrimsonPro-BlackItalic.ttf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* ----------------------------------------
+     UtopiaStd Fonts
+     ---------------------------------------- */
+
+@font-face {
+  font-family: "UtopiaStd-Regular";
+  src: url("../fonts/UtopiaStd/UtopiaStd-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UtopiaStd-Italic";
+  src: url("../fonts/UtopiaStd/UtopiaStd-Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "UtopiaStd-Semibold";
+  src: url("../fonts/UtopiaStd/UtopiaStd-Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UtopiaStd-SemiboldItalic";
+  src: url("../fonts/UtopiaStd/UtopiaStd-SemiboldIt.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "UtopiaStd-Bold";
+  src: url("../fonts/UtopiaStd/UtopiaStd-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UtopiaStd-BoldItalic";
+  src: url("../fonts/UtopiaStd/UtopiaStd-Boldit.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "UtopiaStd-Caption";
+  src: url("../fonts/UtopiaStd/UtopiaStd-Capt.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UtopiaStd-CaptionItalic";
+  src: url("../fonts/UtopiaStd/UtopiaStd-CaptIt.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "UtopiaStd-SemiboldCaption";
+  src: url("../fonts/UtopiaStd/UtopiaStd-SemiboldCapt.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UtopiaStd-SemiboldCaptionItalic";
+  src: url("../fonts/UtopiaStd/UtopiaStd-SemiboldCaptIt.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "UtopiaStd-BoldCaption";
+  src: url("../fonts/UtopiaStd/UtopiaStd-BoldCapt.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UtopiaStd-BoldCaptionItalic";
+  src: url("../fonts/UtopiaStd/UtopiaStd-BoldCaptIt.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "UtopiaStd-Display";
+  src: url("../fonts/UtopiaStd/UtopiaStd-Disp.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UtopiaStd-DisplayItalic";
+  src: url("../fonts/UtopiaStd/UtopiaStd-DispIt.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "UtopiaStd-SemiboldDisplay";
+  src: url("../fonts/UtopiaStd/UtopiaStd-SemiboldDisp.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UtopiaStd-SemiboldDisplayItalic";
+  src: url("../fonts/UtopiaStd/UtopiaStd-SemiboldDispIt.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "UtopiaStd-BoldDisplay";
+  src: url("../fonts/UtopiaStd/UtopiaStd-BoldDisp.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UtopiaStd-BoldDisplayItalic";
+  src: url("../fonts/UtopiaStd/UtopiaStd-BoldDispIt.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "UtopiaStd-BlackHeadline";
+  src: url("../fonts/UtopiaStd/UtopiaStd-BlackHeadline.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UtopiaStd-Subhead";
+  src: url("../fonts/UtopiaStd/UtopiaStd-Subh.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UtopiaStd-SubheadItalic";
+  src: url("../fonts/UtopiaStd/UtopiaStd-SubhIt.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "UtopiaStd-SemiboldSubhead";
+  src: url("../fonts/UtopiaStd/UtopiaStd-SemiboldSubh.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UtopiaStd-SemiboldSubheadItalic";
+  src: url("../fonts/UtopiaStd/UtopiaStd-SemiboldSubhIt.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "UtopiaStd-BoldSubhead";
+  src: url("../fonts/UtopiaStd/UtopiaStd-BoldSubh.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UtopiaStd-BoldSubheadItalic";
+  src: url("../fonts/UtopiaStd/UtopiaStd-BoldSubhIt.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* ========================================
+   General Styles
+   ======================================== */
+
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+
+body {
+  font-family: "CrimsonPro-Regular", serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #222222;
+  background-color: #fff;
+}
+
+p {
+  font-size: 16px;
+  margin: 5px 0;
+  font-family: "CrimsonPro-Regular", serif;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 40px;
+  margin-top: 5px;
+  font-family: "CrimsonPro-Regular", serif;
+}
+
+ul.technical-skills {
+  list-style-type: none;
+  padding: 0px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "CrimsonPro-Regular", serif;
+}
+
+strong {
+  font-weight: bold;
+  font-family: "CrimsonPro-Bold", serif;
+}
+
+a {
+  color: #1a0dab;
+  text-decoration: none;
+  font-family: "CrimsonPro-Regular", serif;
+}
+
+a:hover {
+  text-decoration: underline;
+  font-family: "CrimsonPro-Regular", serif;
+}
+
+/* ========================================
+     Navigation Styles
+     ======================================== */
+
+.navbar {
+  background-color: #f4f4f4;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar .logo a {
+  font-size: 36px;
+  color: #222222;
+  text-decoration: none;
+  align-items: center;
+  font-family: "UtopiaStd-Caption", serif;
+  font-variant: small-caps;
+}
+
+.nav-list {
+  list-style-type: none;
+  font-size: 20px;
+  padding: 0px;
+  display: flex;
+  gap: 20px;
+  margin-top: 0px;
+  font-family: "CrimsonPro-Regular", serif;
+}
+
+.nav-list li a {
+  font-weight: bold;
+  color: #222222;
+  font-family: "CrimsonPro-Regular", serif;
+}
+
+.nav-list li a:hover {
+  color: #555555;
+  font-family: "CrimsonPro-Regular", serif;
+}
+
+/* ========================================
+     Main Content Styles
+     ======================================== */
+
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: "UtopiaStd-Caption", serif;
+  font-variant: small-caps;
+}
+
+/* ========================================
+     About Section Styles
+     ======================================== */
+
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.about-image img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-family: "CrimsonPro-Regular", serif;
+}
+
+/* ========================================
+     Resume Page Styles
+     ======================================== */
+
+header {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  font-family: "CrimsonPro-Regular", serif;
+  padding: 20px 0;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-family: "UtopiaStd-Caption", serif;
+  font-size: 24px;
+  border-bottom: 2px solid #222222;
+  padding-bottom: 5px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-variant: small-caps;
+}
+
+.entry {
+  font-family: "CrimsonPro-Regular", serif;
+  margin-bottom: 20px;
+}
+
+.entry-title {
+  font-family: "CrimsonPro-Regular", serif;
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+.entry-info {
+  font-size: 16px;
+  margin-left: 20px;
+  font-family: "CrimsonPro-Regular", serif;
+}
+
+.entry-description {
+  font-size: 16px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  font-family: "CrimsonPro-Regular", serif;
+}
+
+.project-list {
+  list-style-type: disc;
+  margin-left: 40px;
+  margin-top: 5px;
+  font-family: "CrimsonPro-Regular", serif;
+}
+
+.project-list li {
+  margin-bottom: 5px;
+}
+
+/* ========================================
+     Footer Styles
+     ======================================== */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  font-family: "CrimsonPro-Regular", serif;
+}
+
+/* ========================================
+     Contact Form Styles
+     ======================================== */
+
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-family: "UtopiaStd-Caption", serif;
+  font-variant: small-caps;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: "CrimsonPro-Regular", serif;
+}
+
+#contact-form input[type="submit"] {
+  background-color: #1a0dab;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "CrimsonPro-Regular", serif;
+}
+
+#contact-form input[type="submit"]:hover {
+  background-color: #555555;
+}
+
+/* ========================================
+     Portfolio Page Styles
+     ======================================== */
+
+.project {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.project img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-details {
+  flex: 1;
+}
+
+.project-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "UtopiaStd-Caption", serif;
+  font-variant: small-caps;
+}
+
+.project-description {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-family: "CrimsonPro-Regular", serif;
+}
+
+.project-details a {
+  color: #1a0dab;
+  font-weight: bold;
+  font-family: "CrimsonPro-Regular", serif;
+}
+
+.project-details a:hover {
+  color: #555555;
+  font-family: "CrimsonPro-Regular", serif;
+}
+
+/********************************************
+     Blog Page Styles
+  *********************************************/
+
+.blog-post {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.post-title {
+  font-size: 22px;
+  color: #1a0dab;
+  margin-bottom: 5px;
+  font-family: "UtopiaStd-Caption", serif;
+  font-variant: small-caps;
+}
+
+.post-date {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+  font-family: "CrimsonPro-Regular", serif;
+}
+
+.post-content {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-family: "CrimsonPro-Regular", serif;
+}
+
+.blog-post a {
+  color: #1a0dab;
+  font-weight: bold;
+  font-family: "CrimsonPro-Regular", serif;
+}
+
+.blog-post a:hover {
+  color: #555555;
+  font-family: "CrimsonPro-Regular", serif;
+}
+
+/* ========================================
+     Media Queries
+     ======================================== */
+
+/* Tablets and smaller desktops */
+@media (max-width: 1024px) {
+  .navbar .logo a {
+    font-size: 32px;
+  }
+
+  .nav-list {
+    gap: 15px;
+  }
+
+  .page-title {
+    font-size: 24px;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-text {
+    margin-top: 20px;
+  }
+
+  .section-title {
+    font-size: 23px;
+    margin-bottom: 10px;
+    font-family: "UtopiaStd-Caption", serif;
+  }
+
+  h3 {
+    font-size: 19px;
+    margin-left: 15px;
+    font-family: "UtopiaStd-Caption", serif;
+  }
+
+  p,
+  ul {
+    margin-left: 15px;
+    font-family: "CrimsonPro-Regular", serif;
+  }
+
+  ul.technical-skills {
+    padding-left: 0;
+  }
+
+  /* Portfolio Page Adjustments */
+  .project {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-details {
+    text-align: center;
+  }
+
+  /* Blog Page Adjustments */
+  .blog-post {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+
+  .post-title {
+    font-size: 20px;
+    font-family: "UtopiaStd-Caption", serif;
+  }
+
+  .post-content {
+    font-size: 14px;
+    font-family: "CrimsonPro-Regular", serif;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .navbar .logo a {
+    font-size: 28px;
+  }
+
+  .nav-list {
+    gap: 10px;
+  }
+
+  .page-title {
+    font-size: 20px;
+  }
+
+  .about-image img {
+    width: 150px;
+    height: auto;
+  }
+
+  .about-text p {
+    font-size: 14px;
+    font-family: "CrimsonPro-Regular", serif;
+  }
+
+  .section-title {
+    font-size: 22px;
+    margin-bottom: 8px;
+    font-family: "UtopiaStd-Caption", serif;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: "UtopiaStd-Caption", serif;
+  }
+
+  p,
+  ul {
+    margin-left: 10px;
+    font-family: "CrimsonPro-Regular", serif;
+  }
+
+  ul.technical-skills {
+    padding-left: 5px;
+  }
+
+  /* Contact Form Adjustments */
+  #contact-form input[type="text"],
+  #contact-form input[type="email"],
+  #contact-form textarea {
+    padding: 8px;
+    font-family: "CrimsonPro-Regular", serif;
+  }
+
+  #contact-form input[type="submit"] {
+    width: 100%;
+    font-family: "CrimsonPro-Regular", serif;
+  }
+
+  /* Portfolio Page Adjustments */
+  .project img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-details {
+    text-align: center;
+  }
+
+  /* Blog Page Adjustments */
+  .blog-post {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+
+  .post-title {
+    font-size: 18px;
+    font-family: "UtopiaStd-Caption", serif;
+  }
+
+  .post-content {
+    font-size: 14px;
+    font-family: "CrimsonPro-Regular", serif;
+  }
+}
