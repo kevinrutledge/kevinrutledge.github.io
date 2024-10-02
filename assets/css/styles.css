@@ -1,10 +1,20 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Always show vertical scrollbar to prevent layout shifts */
+html {
+  overflow-y: scroll;
+}
+
 /* ========================================
    Font Imports and Font-Face Declarations
    ======================================== */
 
-/* ----------------------------------------
-   CrimsonPro Fonts
-   ---------------------------------------- */
+/* Crimson Pro Fonts */
 
 @font-face {
   font-family: "CrimsonPro-ExtraLight";
@@ -121,9 +131,7 @@
   font-style: italic;
 }
 
-/* ----------------------------------------
-     UtopiaStd Fonts
-     ---------------------------------------- */
+/* Utopia Fonts */
 
 @font-face {
   font-family: "UtopiaStd-Regular";
@@ -302,13 +310,7 @@
 
 /* ========================================
    General Styles
-   ======================================== */
-
-/* *,
-*::before,
-*::after {
-  box-sizing: border-box;
-} */
+======================================== */
 
 body {
   font-family: "CrimsonPro-Regular", serif;
@@ -322,22 +324,11 @@ body {
 p {
   font-size: 16px;
   margin: 5px 0;
-  font-family: "CrimsonPro-Regular", serif;
 }
 
 ul {
   list-style-type: disc;
-  margin-left: 40px;
-  margin-top: 5px;
-  font-family: "CrimsonPro-Regular", serif;
-}
-
-ul.technical-skills {
-  list-style-type: none;
-  padding: 0px;
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: "CrimsonPro-Regular", serif;
+  margin: 5px 0 0 40px;
 }
 
 strong {
@@ -348,59 +339,67 @@ strong {
 a {
   color: #1a0dab;
   text-decoration: none;
-  font-family: "CrimsonPro-Regular", serif;
 }
 
 a:hover {
   text-decoration: underline;
-  font-family: "CrimsonPro-Regular", serif;
 }
 
 /* ========================================
-     Navigation Styles
-     ======================================== */
+   Navigation Styles
+======================================== */
 
 .navbar {
   background-color: #f4f4f4;
-  padding: 10px;
+  padding: 15px 0 25px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .navbar .logo a {
   font-size: 36px;
   color: #222222;
   text-decoration: none;
-  align-items: center;
   font-family: "UtopiaStd-Caption", serif;
   font-variant: small-caps;
 }
 
 .nav-list {
-  list-style-type: none;
-  font-size: 20px;
-  padding: 0px;
+  list-style: none;
   display: flex;
-  gap: 20px;
-  margin-top: 0px;
-  font-family: "CrimsonPro-Regular", serif;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
 }
 
 .nav-list li a {
   font-weight: bold;
   color: #222222;
-  font-family: "CrimsonPro-Regular", serif;
 }
 
 .nav-list li a:hover {
   color: #555555;
-  font-family: "CrimsonPro-Regular", serif;
 }
 
 /* ========================================
-     Main Content Styles
-     ======================================== */
+   Footer Styles
+======================================== */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+}
+
+/* ========================================
+   Main Content Styles
+======================================== */
 
 main {
   padding: 20px;
@@ -410,28 +409,29 @@ main {
 
 .page-title {
   text-align: center;
-  font-size: 28px;
+  padding: 5px;
+  font-size: 30px;
   margin-bottom: 20px;
-  font-family: "UtopiaStd-Caption", serif;
+  font-family: "UtopiaStd-Regular", serif;
   font-variant: small-caps;
+  font-weight: 500;
 }
 
 /* ========================================
-     About Section Styles
-     ======================================== */
+   About Section Styles
+======================================== */
 
 .about {
   display: flex;
-  flex-direction: row;
+  gap: 30px;
   align-items: flex-start;
-  gap: 20px;
 }
 
 .about-image img {
   border-radius: 50%;
   width: 300px;
-  height: 300px;
-  object-fit: cover;
+  height: auto;
+  margin-top: 15px;
 }
 
 .about-text {
@@ -440,149 +440,60 @@ main {
 
 .about-text p {
   font-size: 18px;
+  padding: 5px;
   margin-bottom: 15px;
-  font-family: "CrimsonPro-Regular", serif;
 }
 
 /* ========================================
-     Resume Page Styles
-     ======================================== */
+   Blog Page Styles
+======================================== */
 
-header {
-  max-width: 900px;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 18px;
+.blog-post .post-title a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+.blog-post .post-title a:hover {
+  text-decoration: underline;
+}
+
+.blog-paragraph {
   font-family: "CrimsonPro-Regular", serif;
-  padding: 20px 0;
+  font-size: 18px;
+  margin: 10px 0;
 }
 
-.section {
-  margin-bottom: 30px;
+.blog-mini-title {
+  font-family: "CrimsonPro-Bold", serif;
+  font-size: 20px;
+  margin: 20px 0 10px 0;
 }
 
-.section-title {
-  font-family: "UtopiaStd-Caption", serif;
-  font-size: 24px;
-  border-bottom: 2px solid #222222;
-  padding-bottom: 5px;
-  font-weight: 600;
+.blog-post-content {
+  font-family: "CrimsonPro-Regular", serif;
+}
+
+.blog-post-content h2.blog-mini-title {
+  font-family: "CrimsonPro-Bold", serif;
+  font-size: 20px;
+  margin-top: 20px;
   margin-bottom: 10px;
-  font-variant: small-caps;
-}
-
-.entry {
-  font-family: "CrimsonPro-Regular", serif;
-  margin-bottom: 20px;
-}
-
-.entry-title {
-  font-family: "CrimsonPro-Regular", serif;
-  font-size: 20px;
-  margin-bottom: 5px;
-  margin-left: 20px;
-}
-
-.entry-info {
-  font-size: 16px;
-  margin-left: 20px;
-  font-family: "CrimsonPro-Regular", serif;
-}
-
-.entry-description {
-  font-size: 16px;
-  margin-left: 20px;
-  margin-bottom: 15px;
-  font-family: "CrimsonPro-Regular", serif;
-}
-
-.project-list {
-  list-style-type: disc;
-  margin-left: 40px;
-  margin-top: 5px;
-  font-family: "CrimsonPro-Regular", serif;
-}
-
-.project-list li {
-  margin-bottom: 5px;
 }
 
 /* ========================================
-     Footer Styles
-     ======================================== */
-
-.footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  position: relative;
-  bottom: 0;
-  font-family: "CrimsonPro-Regular", serif;
-}
-
-/* ========================================
-     Contact Form Styles
-     ======================================== */
-
-#contact-form {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-#contact-form label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-  font-size: 18px;
-  font-family: "UtopiaStd-Caption", serif;
-  font-variant: small-caps;
-}
-
-#contact-form input[type="text"],
-#contact-form input[type="email"],
-#contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 18px;
-  font-family: "CrimsonPro-Regular", serif;
-}
-
-#contact-form input[type="submit"] {
-  background-color: #1a0dab;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 20px;
-  font-family: "CrimsonPro-Regular", serif;
-}
-
-#contact-form input[type="submit"]:hover {
-  background-color: #555555;
-}
-
-/* ========================================
-     Portfolio Page Styles
-     ======================================== */
+   Portfolio Page Styles
+======================================== */
 
 .project {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   gap: 20px;
+  align-items: flex-start;
   margin-bottom: 30px;
 }
 
 .project img {
   width: 100%;
   max-width: 300px;
-  height: auto;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -592,75 +503,142 @@ header {
 }
 
 .project-name {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 22px;
   margin-bottom: 10px;
-  font-family: "UtopiaStd-Caption", serif;
-  font-variant: small-caps;
+  font-family: "CrimsonPro-Bold", serif;
 }
 
 .project-description {
-  font-size: 16px;
+  font-size: 17px;
   margin-bottom: 10px;
-  font-family: "CrimsonPro-Regular", serif;
 }
 
 .project-details a {
   color: #1a0dab;
   font-weight: bold;
-  font-family: "CrimsonPro-Regular", serif;
 }
 
 .project-details a:hover {
   color: #555555;
-  font-family: "CrimsonPro-Regular", serif;
-}
-
-/********************************************
-     Blog Page Styles
-  *********************************************/
-
-.blog-post {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-}
-
-.post-title {
-  font-size: 22px;
-  color: #1a0dab;
-  margin-bottom: 5px;
-  font-family: "UtopiaStd-Caption", serif;
-  font-variant: small-caps;
-}
-
-.post-date {
-  font-size: 14px;
-  color: #777;
-  margin-bottom: 10px;
-  font-family: "CrimsonPro-Regular", serif;
-}
-
-.post-content {
-  font-size: 16px;
-  margin-bottom: 10px;
-  font-family: "CrimsonPro-Regular", serif;
-}
-
-.blog-post a {
-  color: #1a0dab;
-  font-weight: bold;
-  font-family: "CrimsonPro-Regular", serif;
-}
-
-.blog-post a:hover {
-  color: #555555;
-  font-family: "CrimsonPro-Regular", serif;
 }
 
 /* ========================================
-     Media Queries
-     ======================================== */
+   Resume Page Styles
+======================================== */
+
+.header-resume {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 25px 0 0 0;
+}
+
+.header-text {
+  font-size: 17px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-family: "UtopiaStd-Caption", serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #222222;
+  font-weight: 600;
+  font-variant: small-caps;
+}
+
+.entry {
+  margin-bottom: 20px;
+  font-size: 17px;
+  padding-left: 20px;
+}
+
+.entry-title {
+  font-size: 20px;
+  margin: 0;
+}
+
+.entry-info,
+.entry-description {
+  font-size: 17px;
+  margin: 0;
+}
+
+.entry-description {
+  margin-bottom: 15px;
+}
+
+.project-list {
+  list-style: disc;
+  margin: 5px 0 0 40px;
+}
+
+.project-list li {
+  margin-bottom: 5px;
+}
+
+.technical-skills {
+  list-style: none;
+  padding: 0;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+/* ========================================
+   Contact Form Styles
+======================================== */
+
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#contact-form label {
+  display: block;
+  margin: 0 0 5px 3px;
+  font-size: 20px;
+  font-family: "CrimsonPro-Bold", serif;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: "CrimsonPro-Regular", serif;
+  font-size: 18px;
+}
+
+#contact-form input[type="submit"] {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #1a0dab;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "CrimsonPro-Light", serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#contact-form input[type="submit"]:hover {
+  background-color: #555555;
+}
+
+/* ========================================
+   Media Queries
+======================================== */
 
 /* Tablets and smaller desktops */
 @media (max-width: 1024px) {
@@ -669,39 +647,42 @@ header {
   }
 
   .nav-list {
-    gap: 15px;
+    gap: 20px;
   }
 
   .page-title {
-    font-size: 24px;
+    font-size: 27px;
   }
 
   .about {
     flex-direction: column;
-    align-items: center;
     text-align: center;
+    align-items: center;
+    gap: 10px;
   }
 
   .about-text {
-    margin-top: 20px;
+    margin-top: 0px;
+  }
+
+  .about-image img {
+    width: 250px;
+    margin-top: 10px;
   }
 
   .section-title {
-    font-size: 23px;
+    font-size: 24px;
     margin-bottom: 10px;
-    font-family: "UtopiaStd-Caption", serif;
   }
 
   h3 {
-    font-size: 19px;
+    font-size: 20px;
     margin-left: 15px;
-    font-family: "UtopiaStd-Caption", serif;
   }
 
   p,
   ul {
     margin-left: 15px;
-    font-family: "CrimsonPro-Regular", serif;
   }
 
   ul.technical-skills {
@@ -715,8 +696,7 @@ header {
   }
 
   .project img {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
   }
 
   .project-details {
@@ -731,12 +711,10 @@ header {
 
   .post-title {
     font-size: 20px;
-    font-family: "UtopiaStd-Caption", serif;
   }
 
   .post-content {
-    font-size: 14px;
-    font-family: "CrimsonPro-Regular", serif;
+    font-size: 16px;
   }
 }
 
@@ -747,42 +725,39 @@ header {
   }
 
   .nav-list {
-    gap: 10px;
+    gap: 15px;
   }
 
   .page-title {
-    font-size: 20px;
+    font-size: 26px;
   }
 
   .about-image img {
-    width: 150px;
-    height: auto;
+    width: 200px;
+    margin-top: 0px;
   }
 
   .about-text p {
-    font-size: 14px;
-    font-family: "CrimsonPro-Regular", serif;
+    font-size: 16px;
   }
 
   .section-title {
-    font-size: 22px;
+    font-size: 21px;
     margin-bottom: 8px;
-    font-family: "UtopiaStd-Caption", serif;
   }
 
   h3 {
     font-size: 20px;
     margin-left: 10px;
-    font-family: "UtopiaStd-Caption", serif;
   }
 
   p,
   ul {
     margin-left: 10px;
-    font-family: "CrimsonPro-Regular", serif;
   }
 
   ul.technical-skills {
+    font-size: 16px;
     padding-left: 5px;
   }
 
@@ -790,19 +765,17 @@ header {
   #contact-form input[type="text"],
   #contact-form input[type="email"],
   #contact-form textarea {
-    padding: 8px;
     font-family: "CrimsonPro-Regular", serif;
+    padding: 8px;
   }
 
   #contact-form input[type="submit"] {
-    width: 100%;
-    font-family: "CrimsonPro-Regular", serif;
+    padding: 10px 10px;
   }
 
   /* Portfolio Page Adjustments */
   .project img {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
   }
 
   .project-details {
@@ -817,11 +790,9 @@ header {
 
   .post-title {
     font-size: 18px;
-    font-family: "UtopiaStd-Caption", serif;
   }
 
   .post-content {
-    font-size: 14px;
-    font-family: "CrimsonPro-Regular", serif;
+    font-size: 16px;
   }
 }
