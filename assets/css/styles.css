@@ -448,36 +448,48 @@ main {
    Blog Page Styles
 ======================================== */
 
+.blog-post {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.blog-post:last-child {
+  border-bottom: none;
+  margin-bottom: 30px;
+}
+
 .blog-post .post-title a {
-  color: #1a0dab;
-  text-decoration: none;
+  color: #222222;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .blog-post .post-title a:hover {
+  color: #555555;
   text-decoration: underline;
 }
 
-.blog-paragraph {
-  font-family: "CrimsonPro-Regular", serif;
-  font-size: 18px;
+.blog-post .post-date {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.blog-post .post-excerpt {
+  font-size: 17px;
   margin: 10px 0;
 }
 
-.blog-mini-title {
-  font-family: "CrimsonPro-Bold", serif;
-  font-size: 20px;
-  margin: 20px 0 10px 0;
+.blog-post a.read-more {
+  font-size: 17px;
+  font-weight: bold;
+  color: #1a0dab;
 }
 
-.blog-post-content {
-  font-family: "CrimsonPro-Regular", serif;
-}
-
-.blog-post-content h2.blog-mini-title {
-  font-family: "CrimsonPro-Bold", serif;
-  font-size: 20px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+.blog-post a.read-more:hover {
+  color: #555555;
+  text-decoration: underline;
 }
 
 /* ========================================
@@ -502,10 +514,17 @@ main {
   flex: 1;
 }
 
-.project-name {
+.project-name a {
+  color: #222222;
   font-size: 22px;
   margin-bottom: 10px;
   font-family: "CrimsonPro-Bold", serif;
+  text-decoration: none;
+}
+
+.project-name a:hover {
+  color: #555555;
+  text-decoration: underline;
 }
 
 .project-description {
@@ -513,13 +532,25 @@ main {
   margin-bottom: 10px;
 }
 
-.project-details a {
+.project-details a.learn-more {
+  font-size: 17px;
   color: #1a0dab;
   font-weight: bold;
 }
 
-.project-details a:hover {
+.project-details a.learn-more:hover {
+  font-size: 17px;
   color: #555555;
+}
+
+.project-music-festival img {
+  height: 200px; /* Adjust as needed */
+  object-position: top; /* Focus on the top part of the image */
+}
+
+.project-potion img {
+  width: 150px; /* Adjust as needed */
+  object-position: left; /* Focus on the left part of the image */
 }
 
 /* ========================================
@@ -709,12 +740,16 @@ main {
     margin-bottom: 15px;
   }
 
-  .post-title {
+  .blog-post .post-title a {
     font-size: 20px;
   }
 
-  .post-content {
-    font-size: 16px;
+  .blog-post .post-excerpt {
+    font-size: 17px;
+  }
+
+  .blog-post a.read-more {
+    font-size: 17px;
   }
 }
 
@@ -788,11 +823,15 @@ main {
     margin-bottom: 10px;
   }
 
-  .post-title {
+  .blog-post .post-title a {
     font-size: 18px;
   }
 
-  .post-content {
-    font-size: 16px;
+  .blog-post .post-excerpt {
+    font-size: 17px;
+  }
+
+  .blog-post a.read-more {
+    font-size: 17px;
   }
 }
