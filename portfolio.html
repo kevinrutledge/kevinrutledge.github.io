@@ -12,11 +12,11 @@
     <nav class="navbar">
       <h1 class="logo"><a href="index.html">Kevin Rutledge</a></h1>
       <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog/index.html">Blog</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="blog/index.html" class="nav-link">Blog</a></li>
+        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+        <li><a href="resume.html" class="nav-link">Resume</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
       </ul>
     </nav>
 
@@ -25,48 +25,68 @@
       <h1 class="page-title">My Portfolio</h1>
 
       <div class="project">
-        <a href="https://github.com/kevinrutledge/centralcoastcauldrons">
-          <img
-            src="assets/images/rey-and-fins-potion-shop.png"
-            alt="Screenshot of Rey and Finn's Potion Shop"
-            width="300"
-          />
-        </a>
-        <div class="project-details">
-          <a href="https://github.com/kevinrutledge/centralcoastcauldrons"
-            >Rey and Finn's Potion Shop</a
+        <div class="image-cropper">
+          <a
+            href="https://github.com/kevinrutledge/centralcoastcauldrons"
+            class="portfolio-link"
           >
+            <img
+              src="assets/images/potion-exchange.png"
+              alt="Screenshot of Potion Exchange - Image courtesy to Lucas Pierce"
+              class="cropped-image shift-left"
+            />
+          </a>
+        </div>
+        <div class="project-details">
+          <a
+            href="https://github.com/kevinrutledge/centralcoastcauldrons"
+            class="portfolio-link"
+          >
+            Rey and Finn's Potion Shop
+          </a>
           <p class="project-description">
             A RESTful API backend for a role-playing potion shop simulation
             built with Python and FastAPI.
           </p>
-          <a href="rey_finn_potion_shop_details.html" class="learn-more"
+          <a href="rey_finn_potion_shop_details.html" class="learn-more-link"
             >Learn More</a
           >
+          <!-- Attribution Statement -->
+          <p class="image-attribution">Image courtesy of Lucas Pierce</p>
         </div>
       </div>
 
       <div class="project">
-        <a href="https://github.com/kevinrutledge/MusicFestivalApp">
-          <img
-            src="assets/images/music-festival-app.png"
-            alt="Screenshot of Music Festival Application"
-            width="300"
-          />
-        </a>
-        <div class="project-details">
-          <a href="https://github.com/kevinrutledge/MusicFestivalApp"
-            >Music Festival Application</a
+        <div class="image-cropper">
+          <a
+            href="https://github.com/kevinrutledge/MusicFestivalApp"
+            class="portfolio-link"
           >
+            <img
+              src="assets/images/tortuga-app-hand.jpg"
+              alt="Screenshot of Music Festival Application - Image courtesy of AirSHP Tortuga App"
+              class="cropped-image"
+            />
+          </a>
+        </div>
+        <div class="project-details">
+          <a
+            href="https://github.com/kevinrutledge/MusicFestivalApp"
+            class="portfolio-link"
+          >
+            Music Festival Application
+          </a>
           <p class="project-description">
             Developed a backend system for managing music festival events and
             user interactions using Java.
           </p>
           <a
             href="https://github.com/kevinrutledge/MusicFestivalApp"
-            class="learn-more"
+            class="learn-more-link"
             >Learn More</a
           >
+          <!-- Attribution Statement -->
+          <p class="image-attribution">Image courtesy of AirSHP Tortuga App</p>
         </div>
       </div>
     </main>
@@ -75,5 +95,8 @@
     <footer class="footer">
       <p>© 2024 Kevin Rutledge | All Rights Reserved</p>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
